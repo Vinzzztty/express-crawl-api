@@ -14,6 +14,12 @@ app.use(morgan("dev"));
 app.use(cors());
 
 //Routes
-app.use("/", isAuthenticated, indexRouter);
+// app.use("/", isAuthenticated, indexRouter);
+
+app.use("/hello", (req, res) => {
+    res.status(200).json({
+        message: "Hello API",
+    });
+});
 
 module.exports = app;
