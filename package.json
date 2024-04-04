@@ -1,7 +1,7 @@
 {
-  "name": "express-docker-template",
+  "name": "express-crawl-api",
   "version": "1.0.0",
-  "description": "The template of containerized Express application",
+  "description": "Express API Crawling",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -16,7 +16,7 @@
     "Express",
     "Docker"
   ],
-  "author": "Eric Julianto",
+  "author": "Kevin Arnandes",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/algonacci/express-docker-template/issues"
