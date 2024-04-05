@@ -8,18 +8,14 @@ const { isAuthenticated } = require("./middleware/isAuthenticated");
 
 //Router
 const indexRouter = require("./routes/index/index.router");
+const testRouter = require("./routes/index/hello.router");
 
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
 
 //Routes
-// app.use("/", isAuthenticated, indexRouter);
-
-app.use("/hello", (req, res) => {
-    res.status(200).json({
-        message: "Hello API",
-    });
-});
+app.use("/api/", testRouter);
+app.use("/", isAuthenticated, indexRouter);
 
 module.exports = app;
