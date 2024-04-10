@@ -78,9 +78,6 @@ const crawlTokped = async (req, res) => {
             return reviewArticle;
         });
 
-        // Log the length of the reviewArticle array
-        // console.log("Number of articles:", articleHTML.length);
-
         // Close the browser instance
         await browser.close();
 
